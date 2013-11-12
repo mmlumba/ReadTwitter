@@ -70,3 +70,10 @@ Live. Laugh. Love. Kamehameha.
 Even when you don't get the results you want, trying your hardest and giving it your best show honor and true character.
 
 ```
+
+----------------------
+
+Coming Soon (To-Do List):
+
+- [] Make program more compatible for windows by creating executable (.exe) with ocra gem
+- [] Make program more compatible for windows/linux by creating gem out of this script
