@@ -1,6 +1,8 @@
 require 'twitter'
 require 'choice'
 
+#shut up
+OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
 #POST test1.txt
 #Host: www.twitter.com
 
@@ -30,7 +32,8 @@ end;
 
 begin
 	read_twitter Choice.choices.userName
-rescue => NotFound
+rescue => e
+	puts(e)
 	puts("Username: '#{Choice.choices.userName}' does not appear to have a Twitter profile...")
 end
 
