@@ -2,7 +2,7 @@ require 'twitter'
 require 'choice'
 
 #shut up
-OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
+#OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
 #POST test1.txt
 #Host: www.twitter.com
 
