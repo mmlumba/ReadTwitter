@@ -1,5 +1,6 @@
 require 'twitter'
 require 'choice'
+require 'uuid'
 
 #shut up
 #OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
@@ -21,8 +22,10 @@ def read_twitter(userName)
 			config.access_token        = "14255934-et8BZO1mIvU0IrCfFUMX3dOAe5POOvoAyMpOlXEZg"
 			config.access_token_secret = "omsato3lgDz2zMMD2zHTiqkSwyPw3Llp04jwX26wSr4JH"
 	end
-	read = client.user_timeline(userName)
-	fname="test1.txt"
+	uuid = UUID.new
+	read = client.user_timeline(userName,{:count => 3200})
+	currentTime = (Time.new).strftime("%Y_%m_%d");
+	fname="#{userName}_#{currentTime}.txt"
 	somefile=File.open(fname,"w")
 
 	read.each{ |tweet| somefile.puts(tweet.text) }
