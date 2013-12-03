@@ -23,7 +23,7 @@ def read_twitter(userName)
 			config.access_token_secret = "omsato3lgDz2zMMD2zHTiqkSwyPw3Llp04jwX26wSr4JH"
 	end
 	uuid = UUID.new
-	read = client.user_timeline(userName,{:count => 3200})
+	read = client.mentions_timeline(userName,{:count => 200})
 	currentTime = (Time.new).strftime("%Y_%m_%d");
 	fname="#{userName}_#{currentTime}.txt"
 	somefile=File.open(fname,"w")
