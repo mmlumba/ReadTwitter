@@ -24,17 +24,19 @@ def read_twitter(userName,word)
 	end
 	#uuid = UUID.new
 	#read = client.user_timeline(userName,{:count => 200})
-	read = client.search("to:#{userName} #{word}", :result_type => "recent").collect do |tweet|
+	read = client.search("to:#{userName} #{word}", :count => 200, :result_type => "recent").collect do |tweet|
   		"[#{tweet.user.screen_name}:] #{tweet.text}"
 	end
 	currentTime = (Time.new).strftime("%Y_%m_%d");
-	fname="#{userName}_#{currentTime}.txt"
+	fname="#{userName}_#{word}_#{currentTime}.txt"
 	somefile=File.open(fname,"w")
 
 	#read.each{ |tweet| somefile.puts(tweet.text) }
 	somefile.puts(read)
 	somefile.close
 end;
+
+#:result_type => "recent"
 
 
 begin
