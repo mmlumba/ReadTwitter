@@ -19,55 +19,29 @@ Install by Windows: Download with RubyInstaller and matching DevKit (https://git
 
 How this works:
 
-* From the command line, run ``` ruby twitterapi.rb --username "<INSERT USERNAME HERE>" ```
+* From the command line, run ``` ruby twitterapi.rb -u "<INSERT USERNAME HERE>" -w "<INSERT WORD HERE>"```
 * Sample run:
 
 ```
 
-ruby twitterapi.rb --username "Goku" 
+ruby twitterapi.rb -u "paramore" -w "happy"
 
-How many Saiyans does it take to screw in a lightbulb?
+[densmiffy68:] @paramore , can you wish my daughter @hanban_123  a happy 15th birthday, she loves your concerts in birmingham, can't wait till the next one
+[CateyGrace16:] @Paramore makes me happy @yelyahwilliams @itstayloryall @schzimmydeanie :) &lt;3
+[theworldis0urs:] @paramore makes me happy.
+[whoa_lashton:] @paramore you make me super happy, love you so much ♥
+[samwalkwitz:] @paramore was incredible tonight and I almost cried when they brought the girl on stage she was so happy she was awesome  @yelyahwilliams
+[cait_veronica:] @paramore is perfect😍 happy birthday Molly! I love my little sistaaa😘👭 #Q102JingleBall
+[cait_veronica:] @paramore is perfect😍 happy birthday Molly! I love my little sistaaa😘👭
+[Barbilina:] “@paramore: NEW BLOG: Update from the band! http://t.co/1ahZhTwkLX” omg I can't handle this, I'm so happy and proud of you guys 😭❤️😘
+[ParamoreAUT:] @paramore i'm so proud of you and happy aaah i can't even put my feelings into words i love you so much
+[BealerAmy:] @paramore Happy Holidays from Central PA!!!!
+[ItsJustA_Spark:] @paramore They did such a good job! i got so emotional watching videos with u and Erica in Nashville tho. so happy for u guys!
+[BVB_Revelation:] @paramore can you guys please say happy birthday to my friend Athena @AngelOfDark2013
+[raynjhart:] So Happy #EEEEE “@paramore: We shot a video today for Ain't It Fun. This time it's for real. #AintItFun http://t.co/zAtLhzaIgI”
+[_WhatisAlecx:] @paramore THIS MAKES ME SO HAPPY
+[crrfs98:] @paramore ’s iTunes festival makes me so happy
 
-None. That is what Chi-Chi is for.
-RT @DBZ_Saiyan_Saga: Our Super Saiyan teaser clip will be online in early December! Here's some SSJ concept art to whet your appetite! http…
-The most righteous thing one can do is place their wants to the side and focus on the needs of others.
-If you fall, it is up to you to pick yourself up. If you fail, do not dwell on it, but learn from it.
-Humans make mistakes. That is what it means to be a human. Not everyone gets it right the first time. But everyone can learn.
-I'll go first! http://t.co/9sLGM0c8w3
-Never give up hope, never give up trying.
-What doesn't kill you, makes you stronger. Unless you're a Saiyan. Then being killed also makes you stronger.
-RT if you are a fan of Dragon Ball Z!
-Um... You did a good job. RT @Madison420Ivy: my #Goku #DragonBallZ costume!! ;D http://t.co/onrXH3Ga7n
-There is a difference between trying to be better than you are and trying to change who you are. Train yourself, never change yourself.
-If you’re having power level problems I feel bad for you, son. I got 99 problems but becoming Super Saiyan ain’t one.
-A true friend doesn’t grieve at your funeral. A true friend searches for the Dragon Balls.
-#GirlsLikeItWhen you transform into a Super Saiyan.
-#SnakeWay
-
-╭⇠⇠⇠╯
-╰⇢⇢⇢╮
-╭⇠⇠⇠╯
-╰⇢⇢⇢╮
-╭⇠⇠⇠╯
-╰⇢⇢⇢╮
-╭⇠⇠⇠ ╯
-╰⇢⇢⇢╮
-╭⇠⇠⇠╯ 
-╰⇢⇢⇢╮
-╭⇠⇠⇠╯ 
-╰⇢⇢⇢╮ 
-╭⇠⇠⇠╯
-╰⇢⇢⇢╮
-╭⇠⇠⇠╯
-╰⇢ O King Kai’s Planet
-
-#SnakeWay
-RT if you want Netflix to add Dragon Ball Z!
-A one in a million chance, is still better than no chance at all.
-Dragon Ball Z: Battle of Z gets a January Release. Here is a NEW Trailer! 
-http://t.co/d8MBwsbFjL
-Live. Laugh. Love. Kamehameha.
-Even when you don't get the results you want, trying your hardest and giving it your best show honor and true character.
 
 ```
 
