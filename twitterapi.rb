@@ -22,7 +22,6 @@ def read_twitter(userName,word)
 			config.access_token        = "14255934-et8BZO1mIvU0IrCfFUMX3dOAe5POOvoAyMpOlXEZg"
 			config.access_token_secret = "omsato3lgDz2zMMD2zHTiqkSwyPw3Llp04jwX26wSr4JH"
 	end
-	#uuid = UUID.new
 	#read = client.user_timeline(userName,{:count => 200})
 	read = client.search("to:#{userName} #{word}", :count => 200, :result_type => "recent").collect do |tweet|
   		"#{tweet.user.screen_name}: #{tweet.text}"
