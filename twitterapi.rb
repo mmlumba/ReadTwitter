@@ -27,7 +27,7 @@ def read_twitter(userName,word)
   		"#{tweet.user.screen_name}: #{tweet.text}"
 	end
 	currentTime = (Time.new).strftime("%Y_%m_%d");
-	fname="2013tours/#{userName}_#{word}_#{currentTime}.txt"
+	fname="#{userName}_#{word}_#{currentTime}.txt"
 	somefile=File.open(fname,"w")
 
 	#read.each{ |tweet| somefile.puts(tweet.text) }
