@@ -43,7 +43,7 @@ def read_twitter(word)
 
 		    	somefile.puts object.text if object.is_a?(Twitter::Tweet)
 		    	count +=1
-		    	if(count == 100)
+		    	if(count == 40)
 		    		abort
 		    	end
 		    end
