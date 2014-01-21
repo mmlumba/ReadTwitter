@@ -30,7 +30,7 @@ def read_twitter(word)
     
     currentTime = (Time.new).strftime("%Y_%m_%d");
 	startTime = Time.now
-	fname="#{word.join("_")}_#{currentTime}.txt"
+	fname="q1sydney/#{word.join("_")}_#{currentTime}.txt"
 	somefile=File.open(fname,"w")
 
 
