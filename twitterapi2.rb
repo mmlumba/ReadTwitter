@@ -13,12 +13,18 @@ Choice.options do
 		long '--word *WORDS'
 		desc 'What type of tweet content you were looking for. You can pass more than one word.'
 	end
+
+	option :directory, :required => true do
+        short '-d'
+        long '--dir=directory'
+        desc 'The directory to place your file in'
+    end
 end
 
 #keyWord = Array.new(option)
 #keyWord.each {|x| puts x}
 
-def read_twitter(word)
+def read_twitter(word,directory)
 	client = Twitter::Streaming::Client.new do |config|
 			config.consumer_key        = "hJ75vlDtueJeRauUXu5ow"
 			config.consumer_secret     = "0lh6Lejgp8C9h2ZG2TvsAn2YkiRVESMIMHFefI3sE"
@@ -30,7 +36,7 @@ def read_twitter(word)
     
     currentTime = (Time.new).strftime("%Y_%m_%d");
 	startTime = Time.now
-	fname="q1sydney/#{word.join("_")}_#{currentTime}.txt"
+	fname="#{directory}/#{word.join("_")}_2.txt"
 	somefile=File.open(fname,"w")
 
 
@@ -80,4 +86,4 @@ end;
 #rescue => e_keyword
 #end
 
-read_twitter(Choice.choices[:word])
+read_twitter(Choice.choices[:word],Choice.choices[:directory])

@@ -13,9 +13,15 @@ Choice.options do
                 long '--word=keyWord'
                 desc 'What type of tweet content you were looking for'
         end
+
+        option :directory, :required => true do
+        		short '-d'
+        		long '--dir=directory'
+        		desc 'The directory to place your file in'
+        end
 end
 
-def read_twitter(userName,word)
+def read_twitter(userName,word,directory)
         client = Twitter::REST::Client.new do |config|
                         config.consumer_key        = "hJ75vlDtueJeRauUXu5ow"
                         config.consumer_secret     = "0lh6Lejgp8C9h2ZG2TvsAn2YkiRVESMIMHFefI3sE"
@@ -27,7 +33,7 @@ def read_twitter(userName,word)
                   "#{tweet.text}"
         end
         currentTime = (Time.new).strftime("%Y_%m_%d");
-        fname="q1nyc/#{userName}_#{word}_#{currentTime}.txt"
+        fname="#{directory}/#{userName}_#{word}_#{currentTime}.txt"
         somefile=File.open(fname,"w")
 
         #read.each{ |tweet| somefile.puts(tweet.text) }
@@ -39,9 +45,12 @@ end;
 
 
 begin
-        read_twitter Choice.choices.userName,Choice.choices.word
+        read_twitter Choice.choices.userName,Choice.choices.word,Choice.choices.directory
 rescue => e_username
         puts(e_username)
         puts("Username: '#{Choice.choices.userName}' does not appear to have a Twitter profile...")
 rescue => e_keyword
+rescue => e_directory
+		puts(e_directory)
+		puts("Directory: '#{Choice.choices.directory}' does not exist")
 end
